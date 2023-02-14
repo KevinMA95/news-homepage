@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <!--F O N T S-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+  <section class="menu-open active">
+    <div class="modal-content">
+      <img src="assets/images/icon-menu-close.svg" alt="menu-close" class="btn-close">
+      <ul class="menu-mobile">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+  </section>
+  <header>
+    <img src="assets/images/logo.svg" alt="logo">
+    <img src="assets/images/icon-menu.svg" alt="menu" class="btn-menu">
+    <ul class="menu-desktop">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </header>
+  <main>
+    <picture>
+      <source media="(min-width:900px)" srcset="assets/images/image-web-3-desktop.jpg">
+      <img src="assets/images/image-web-3-mobile.jpg" alt="web-3">
+    </picture>
+    <h1>The Bright Future of Web 3.0?</h1>
+    <div class="grid-item">
+      <p class="gray-txt">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?
+      </p>
+      <button id="btn-read" class="btn">Read more</button>
+    </div>
+    <div class="news-container">
+      <div class="news">
+        <h2 class="news-title">New</h2>
+        <h3 class="news-header">Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <h3 class="news-header">The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <div class="last">
+          <h3 class="news-header">Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+    <div class="articles">
+      <div class="article">
+        <img src="assets/images/image-retro-pcs.jpg" alt="retro-pc">
+        <div class="article-text">
+          <h3 class="article-head">01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p class="gray-txt">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="article">
+        <img src="assets/images/image-top-laptops.jpg" alt="top-laptops">
+        <div class="article-text">
+          <h3 class="article-head">02</h3>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p class="gray-txt">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="article">
+        <img src="assets/images/image-gaming-growth.jpg" alt="gaming">
+        <div class="article-text">
+          <h3 class="article-head">03</h3>
+          <h4>The Growth of Gaming</h4>
+          <p class="gray-txt">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
